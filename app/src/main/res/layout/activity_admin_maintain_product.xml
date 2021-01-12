@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scroll1"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="52dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/product_image_maintain"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_below="@+id/product_name"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="2dp"
+                    />
+                <EditText
+                    android:id="@+id/product_name_maintain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/product_image_maintain"
+                    android:hint="Product Name"
+                    android:background="@drawable/input_design"
+                    android:padding="12dp"
+                    android:layout_margin="5dp"
+                    android:textAlignment="center"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+                <EditText
+                    android:id="@+id/product_price_maintain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/product_name_maintain"
+                    android:hint="Product Price"
+                    android:background="@drawable/input_design"
+                    android:padding="12dp"
+                    android:layout_margin="5dp"
+                    android:textAlignment="center"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+
+                <EditText
+
+                    android:id="@+id/product_description_maintain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/product_price_maintain"
+                    android:background="@drawable/input_design"
+                    android:hint="Product Description"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="2dp"
+                    android:textAlignment="center"
+                    android:textSize="16dp"
+                    android:padding="12dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    <Button
+        android:id="@+id/apply_changes_btn"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@+id/remove_product_btn"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:text="Apply Changes"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:padding="12dp"
+        android:textColor="@android:color/white"
+        />
+    <Button
+        android:id="@+id/remove_product_btn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:text="Remove"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:padding="12dp"
+        android:textColor="@android:color/white"
+        />
+
+</RelativeLayout>
+
+
