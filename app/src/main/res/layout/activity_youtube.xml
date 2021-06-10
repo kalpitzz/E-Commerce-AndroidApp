@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".YoutubeActivity">
+
+    <RelativeLayout
+        android:id="@+id/youtube_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+        <EditText
+            android:id="@+id/Youtube_search"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="50dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:hint="SEARCH"
+            android:padding="15dp"
+            android:textStyle="bold"
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white"
+            />
+            <Button
+                android:id="@+id/search_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="300dp"
+                android:text="SEARCH"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@android:color/white"
+                />
+    </RelativeLayout>
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/playerView"
+        android:layout_below="@+id/youtube_header"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+
+
+
+</RelativeLayout>

@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -34,6 +35,8 @@ import com.squareup.picasso.Picasso;
 import ViewHolder.ProductViewHolder;
 import de.hdodenhof.circleimageview.CircleImageView;
 import io.paperdb.Paper;
+
+
 
 public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener
 {
@@ -232,7 +235,8 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         }
         else if (id == R.id.nav_search)
         {
-
+            Intent intent=new Intent(HomeActivity.this,YoutubeActivity.class);
+            startActivity(intent);
         }
         else if (id == R.id.nav_category)
         {

@@ -87,7 +87,7 @@ test.sendMessage();
     }
 
     private String getURLPath() {
-        String twar=getURL()+"httpapi/send?username=kalpitjangid247@gmail.com&password=7726030493&sender_id=SMSCIN&route=T&phonenumber="+customerPhoneNumber+"&message=Dear%20%2C%20%23"+customerUserName+"%23%20your%20tickets%20are%20confirmed%20for%20%23field2%23%20.%20Date%20-%20%23field3%23%20Time%20-%20%23field4%23%20Seats%20-%20%23field5%23%20Pick%20Up%20code%20-%20%23field6%23%20Please%20collect%20your%20tickets%20from%20MOVIEPLEX%20_Box_Office.";
+        String twar=getURL()+"httpapi/send?username=kalpitjangid95@gmail.com&password=k7726030493&sender_id=PROMOTIONAL&route=P&phonenumber="+customerPhoneNumber+"&message=PROMOTIONAL";
         return twar;
     }
 
